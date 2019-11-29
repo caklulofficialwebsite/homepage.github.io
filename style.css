@@ -1,142 +1,63 @@
-/*CSS Reset*/
+// ini adalah style jumbotron
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.jumbotron{
+    background-image: url(img/Logo.jpg);
+    background-size: cover;
+    height: 770px;
+    text-align: center;
+    margin-top: -120px; 
 }
 
-/* Style */
-
-
-.container {
-	height: 100%;
-	width: 1349px;
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 200px;
 }
 
-.header{
-	height: 350px;
-	width : 100%;
-	background-image: linear-gradient(-45deg,#00a8ec,#e3007b);   
-	opacity: 0.7;
+.jumbotron p {
+    color: white;
+    font-size: 20px;
 }
 
-.nav {
-	height: 35px;
-	background-image: linear-gradient(-45deg,#00a8ec,#e3007b);   
-	border-bottom: 2px solid white;
-	text-align: center;
-
+.jumbotron hr {
+    border-color : #F05F40;
+    width: 70px;
+    border-width: 3px;
 }
 
-.nav a{
-	text-decoration: none;
-	margin: 10px 100px 100px 100px ;
-	display: inline-block;
-	color : #eee;
-	transform: rotate(-1800deg);
-	transition: 3s;
+.jumbotron .btn{
+    background-color: #F05F40;
+    border: none;
+    border-radius: 25px;
+    padding-right: 25px; 
+    padding-left:  25px; 
+    margin-top  : 40px;
 }
 
-.nav a:hover{
-	transform: rotate3d(1800deg);
-	transition: 3s;
-	text-decoration: none;
-	margin: 10px 100px 100px 100px ;
-	display: inline-block;
-	color : #eee;
-	opacity: 0;
+// ini adalah style slider
+
+.carousel-item{
+    height: 8em;
+    top: 0px;
+}
+.carousel-item img{
+    margin-top: -120px;
+    top: 0px;
+}
+.carousel-item .display-4 {
+    /* margin-top:-500px;  */
+}
+.carousel-item hr {
+    border-color : #F05F40;
+    width: 70px;
+    border-width: 3px;
+    margin: auto;
 }
 
-.header img {
-	height: 300px;
-	width : 350px;
-	margin-left: 39%;
-}
-
-.content {
-	height: 900px;
-	width : 100%;
-	background-color: rgb(180,180,180);
-}
-
-.content .main {
-	height: 500px;
-	width: 65%;
-	background-color: rgba(70,150,165,0.6); 
-}
-
-.content .sidebar{
-	width: 
-	float: right;
-}
-
-.footer {
-	height: 50px;
-	width : 100%;
-	background-color: #aeae;
-	display: inline-block;
-	text-align: center;
-}
-
-.footer p {
-	text-align: center;
-	margin-top: 20px;
-	display: inline-block;
-
-}
-
-/* micro clearfix */
-
-.cf:before,
-.cf:after {
-    content: " "; 
-    display:  table; 
-}
-
-.cf:after {
-    clear: both;
-}
-
-
-.cf {
-    *zoom: 1;
+.carousel-item .btn{
+    background-color: #F05F40;
+    border: none;
+    border-radius: 25px;
+    padding-right: 25px; 
+    padding-left:  25px; 
+    margin-top  : 40px;
 }
